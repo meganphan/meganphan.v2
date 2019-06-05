@@ -13,7 +13,10 @@ const IndexPage = () => (
     <h1>Megan Phan.</h1>
     <p>I am currently building this website.</p>
     <p>Check out the previous website <a href="https://meganphan.github.io/meganphan.v1/">here</a></p>
-    <Video></Video>
+    <Video
+          videoSrcURL={"https://giphy.com/gifs/1XgIXQEzBu6ZWappVu/html5"}
+          videoTitle={"Under Construction"}
+        />
   </Layout>
 )
 
