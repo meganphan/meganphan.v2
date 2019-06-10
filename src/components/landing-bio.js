@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDoubleRight, faTools } from '@fortawesome/free-solid-svg-icons'
 
 
 const Container = styled.div`
@@ -43,11 +43,13 @@ const LandingBio = () => (
     render={data => (
       <OuterContainer>
         <Container>
-          <NameHeader>{data.site.siteMetadata.title}</NameHeader>
-          <Description>Front-end Web Developer</Description>
-          <FontAwesomeIcon icon={faAngleDoubleRight} style={{ 
+          {/* <NameHeader>{data.site.siteMetadata.title}</NameHeader> */}
+          {/* <Description>Front-end Web Developer</Description> */}
+          {/* <FontAwesomeIcon icon={faAngleDoubleRight} style={{ 
             fontSize: '40px'
-            }} />
+            }} /> */}
+            <NameHeader>Still in Development</NameHeader>
+            <FontAwesomeIcon icon={faTools}></FontAwesomeIcon>
         </Container>
       </OuterContainer>
     )}
