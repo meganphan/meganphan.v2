@@ -57,7 +57,7 @@ const Layout = ({ children }) => (
           <Footer>
             © {new Date().getFullYear()}, Built with <a className="faHeart"><FontAwesomeIcon icon={faHeart}> </FontAwesomeIcon></a> by
             {` `}
-            <GithubLink href="">Megan Phan</GithubLink>
+            <GithubLink href="https://github.com/meganphan">Megan Phan</GithubLink>
           </Footer>
         </Content>
       </>
