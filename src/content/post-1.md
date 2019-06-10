@@ -1,6 +1,6 @@
 ---
 title: "Title"
-date: "2019-06-8"
+date: "2019-06-08"
 draft: true
 path: "/blog/title"
 ---
