@@ -8,9 +8,35 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import styled from "@emotion/styled"
 
 import Header from "./header"
 import "./layout.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+
+const Content = styled.div`
+  margin: 0 auto;
+  max-width: 860px;
+  padding: 0 1.0875rem 1rem;
+  padding-top: 0;
+`
+
+const GithubLink = styled.a`
+  margin-left: 5px;
+`
+
+const Footer = styled.footer`
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+
+  & .faHeart{
+    color: red;
+    padding-left: 0.5em;
+    padding-right 0.5em;
+  }
+`
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -25,22 +51,15 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <Content>
           <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Designed and Built by
+          <Footer>
+            © {new Date().getFullYear()}, Built with <a className="faHeart"><FontAwesomeIcon icon={faHeart}> </FontAwesomeIcon></a> by
             {` `}
-            <a href="https://github.com/meganphan">Megan Phan</a>
-          </footer>
-        </div>
+            <GithubLink href="">Megan Phan</GithubLink>
+          </Footer>
+        </Content>
       </>
     )}
   />
