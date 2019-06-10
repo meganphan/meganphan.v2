@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDoubleRight, faTools } from '@fortawesome/free-solid-svg-icons'
+import { faTools } from '@fortawesome/free-solid-svg-icons'
 
 
 const Container = styled.div`
