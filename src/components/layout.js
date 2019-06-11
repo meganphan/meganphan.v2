@@ -33,9 +33,10 @@ const Footer = styled.footer`
   font-size: 15px;
 
   & .faHeart{
-    color: red;
     padding-left: 0.5em;
     padding-right 0.5em;
+    color: red;
+    fill: currentColor;
   }
 `
 
@@ -57,7 +58,7 @@ const Layout = ({ children }) => (
         <Content>
           <main>{children}</main>
           <Footer>
-            Built with <a className="faHeart"><IconHeart /></a> by
+            Built with <a className="faHeart"><IconHeart/></a> by
             {` `}
             <GithubLink
               href="https://github.com/meganphan"

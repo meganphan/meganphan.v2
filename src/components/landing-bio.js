@@ -5,10 +5,11 @@ import styled from "@emotion/styled"
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
 // import { faLinkedin, faInstagram, faGithub} from '@fortawesome/free-brands-svg-icons'
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import IconLinkedIn from "../components/icons/linkedin"
 import IconGithub from "../components/icons/github"
 import IconInsta from "../components/icons/instagram"
+import IconArrow from "../components/icons/arrow"
 
 const Container = styled.div`
   text-align: center;
@@ -47,6 +48,7 @@ const Button = styled.button`
   & .faArrow:hover{
     cursor: pointer;
     color: #949494;
+    fill: currentColor;
   }
 `
 const SocialMediaLink = styled.a`
@@ -54,6 +56,7 @@ const SocialMediaLink = styled.a`
   margin-right: 1em;
   &:hover{
     color: #949494;
+    fill: currentColor;
   }
 `
 const LandingBio = () => (
@@ -78,9 +81,7 @@ const LandingBio = () => (
           <br></br>
           <br></br>
           <Button>
-          {/* <Link to="/about"><FontAwesomeIcon className="faArrow" icon={faAngleDoubleRight} style={{ 
-            fontSize: '40px'
-            }} /></Link> */}
+          <Link to="/about" class="faArrow"><IconArrow /></Link>
           </Button>
         </Container>
       </OuterContainer>
