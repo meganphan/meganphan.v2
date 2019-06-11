@@ -2,7 +2,7 @@ import React from "react"
 import styled from "@emotion/styled"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import {Link} from "gatsby"
+// import {Link} from "gatsby"
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faHeart } from "@fortawesome/free-solid-svg-icons";
 // import IconHeart from "../components/icons/heart"
