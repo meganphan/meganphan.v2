@@ -37,6 +37,9 @@ const NavLink = styled(Link)`
   @media screen and (max-width: 575px){
     font-size: 15px;
   }
+  @media screen and (max-width: 450px){
+    font-size: 12px;
+  }
 `
 
 const HomeLink = styled(NavLink)`
