@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import * as config from "../components/config/index"
 
 function SEO({ description, lang, meta, keywords, title }) {
   const { site } = useStaticQuery(
@@ -82,9 +83,9 @@ function SEO({ description, lang, meta, keywords, title }) {
 }
 
 SEO.defaultProps = {
-  lang: `en-us`,
-  meta: ["A Vietnamese girl, who is pursuing her B.S. in Computer Science at Texas Christian University. Her core values as a CS major are learning, creating, and contributing."],
-  keywords: [vietnamese, software, engineer, computer, science, porfolio, website, hoang, phan, megan, frontend, web, developer, web, development, texas, christian, university, tcu, personal, website],
+  lang: `en`,
+  meta: [config.siteDescription],
+  keywords: [config.siteKeywords],
 }
 
 SEO.propTypes = {
