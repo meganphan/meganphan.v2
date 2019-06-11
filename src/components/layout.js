@@ -51,13 +51,18 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
+        {/* eslint-disable */}
         <Header siteTitle={data.site.siteMetadata.title} />
         <Content>
           <main>{children}</main>
           <Footer>
             Built with <a className="faHeart"><FontAwesomeIcon icon={faHeart}> </FontAwesomeIcon></a> by
             {` `}
-            <GithubLink href="https://github.com/meganphan">Megan Phan</GithubLink>
+            <GithubLink
+              href="https://github.com/meganphan"
+              target="_blank"
+              rel="nofollow noopener noreferrer">Megan Phan
+            </GithubLink>
           </Footer>
         </Content>
       </>

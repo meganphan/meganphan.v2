@@ -33,6 +33,10 @@ const NavLink = styled(Link)`
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+  @media screen and (max-width: 575px){
+    font-size: 15px;
+  }
 `
 
 const HomeLink = styled(NavLink)`
@@ -51,6 +55,7 @@ const Header = ({ siteTitle }) => (
     <Content>
       <p>
         <HomeLink to="/">Home</HomeLink>
+        <NavLink to="/about">About</NavLink>
         <NavLink to="/experience">Experience</NavLink>
         <NavLink to="/projects">Projects</NavLink>
         <NavLink to="/blog">Blog</NavLink>
