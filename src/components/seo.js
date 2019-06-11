@@ -83,8 +83,8 @@ function SEO({ description, lang, meta, keywords, title }) {
 
 SEO.defaultProps = {
   lang: `en`,
-  meta: [],
-  keywords: [],
+  meta: ["A Vietnamese girl, who is pursuing her B.S. in Computer Science at Texas Christian University. Her core values as a CS major are learning, creating, and contributing."],
+  keywords: ["vietnamese, software engineer, computer science, porfolio, website, hoang phan, megan phan, frontend, web developer, web development, texas christian university, tcu, personal website"],
 }
 
 SEO.propTypes = {

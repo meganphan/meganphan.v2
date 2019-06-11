@@ -41,13 +41,14 @@ const Button = styled.button`
   @keyframes right{
     from{
       transform: translateX(0px);
+      color: rgb(23, 151, 151);
     }to{
       transform: translateX(-15px);
     }
   }
   & .faArrow:hover{
     cursor: pointer;
-    color: #949494;
+    color: rgb(23, 151, 151);
     fill: currentColor;
   }
 `
@@ -55,7 +56,7 @@ const SocialMediaLink = styled.a`
   position: relative;
   margin-right: 1em;
   &:hover{
-    color: #949494;
+    color: rgb(23, 151, 151);
     fill: currentColor;
   }
 `
@@ -81,7 +82,7 @@ const LandingBio = () => (
           <br></br>
           <br></br>
           <Button>
-          <Link to="/about" class="faArrow"><IconArrow /></Link>
+          <Link to="/about" className="faArrow"><IconArrow /></Link>
           </Button>
         </Container>
       </OuterContainer>

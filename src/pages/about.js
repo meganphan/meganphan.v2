@@ -2,8 +2,10 @@ import React from "react"
 import styled from "@emotion/styled"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import {Link} from "gatsby"
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faHeart } from "@fortawesome/free-solid-svg-icons";
+// import IconHeart from "../components/icons/heart"
 
 const Content = styled.div`
   margin: 0 auto;
@@ -13,7 +15,18 @@ const Content = styled.div`
   & .faHeart{
       color: #4d1979;
       margin-left: 0.5em;
+      fill: currentColor;
   }
+  & a, span{
+    color: rgb(23, 151, 151);
+    font-weight: bold;
+    text-decoration: none;
+  }
+    @media screen and (max-width: 575px){
+       & h1{
+         font-size: 30px;
+       }
+    }
 `
 
 const About = () => (
@@ -22,14 +35,8 @@ const About = () => (
     <Content>
         {/* eslint-disable */}
         <h1>Annyeonghaseyo!</h1>
-        {/* <p>I am truly happy that you found my website. You may find this site a little bit monochromatic but you'll get some colors as you get to know me better.</p>
-        <ol>
-            <li><strong>Nationality: </strong>Vietnamese <span role="img">🇻🇳</span></li>
-            <li><strong>School: </strong>Texas Christian University, Go Frogs! 
-            <FontAwesomeIcon className="faHeart" icon={faHeart}></FontAwesomeIcon></li>
-            <li><strong>Zodiac sign: </strong> Virgo</li>
-            <li><strong>Languages: </strong> Vietnamese (native), English, Korean</li> 
-        </ol>*/}
+        {/* <p>I am Hoang Phan, and also go by Megan. I am a forth-year Computer Science student at <a href="https://computerscience.tcu.edu/" target="_blank">Texas Christian University.</a></p> */}
+
     </Content>
   </Layout>
 )
