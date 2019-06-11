@@ -12,8 +12,9 @@ import styled from "@emotion/styled"
 
 import Header from "./header"
 import "./layout.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import IconHeart from "../components/icons/heart"
 
 const Content = styled.div`
   margin: 0 auto;
@@ -56,7 +57,7 @@ const Layout = ({ children }) => (
         <Content>
           <main>{children}</main>
           <Footer>
-            Built with <a className="faHeart"><FontAwesomeIcon icon={faHeart}> </FontAwesomeIcon></a> by
+            Built with <a className="faHeart"><IconHeart /></a> by
             {` `}
             <GithubLink
               href="https://github.com/meganphan"

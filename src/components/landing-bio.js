@@ -2,11 +2,13 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin, faInstagram, faGithub} from '@fortawesome/free-brands-svg-icons'
-import { Link } from "gatsby"
-
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
+// import { faLinkedin, faInstagram, faGithub} from '@fortawesome/free-brands-svg-icons'
+// import { Link } from "gatsby"
+import IconLinkedIn from "../components/icons/linkedin"
+import IconGithub from "../components/icons/github"
+import IconInsta from "../components/icons/instagram"
 
 const Container = styled.div`
   text-align: center;
@@ -70,15 +72,15 @@ const LandingBio = () => (
         <Container>
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
           <Description>Front-end Web Developer</Description>
-          <SocialMediaLink href="https://www.linkedin.com/in/hoangphan79/" target="_blank"><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></SocialMediaLink>
-          <SocialMediaLink href="https://github.com/meganphan" target="_blank"><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon></SocialMediaLink>
-          <SocialMediaLink href="https://www.instagram.com/meganhphan/" target="_blank"><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></SocialMediaLink>
+          <SocialMediaLink href="https://www.linkedin.com/in/hoangphan79/" target="_blank"><IconLinkedIn /></SocialMediaLink>
+          <SocialMediaLink href="https://github.com/meganphan" target="_blank"><IconGithub /></SocialMediaLink>
+          <SocialMediaLink href="https://www.instagram.com/meganhphan/" target="_blank"><IconInsta /></SocialMediaLink>
           <br></br>
           <br></br>
           <Button>
-          <Link to="/about"><FontAwesomeIcon className="faArrow" icon={faAngleDoubleRight} style={{ 
+          {/* <Link to="/about"><FontAwesomeIcon className="faArrow" icon={faAngleDoubleRight} style={{ 
             fontSize: '40px'
-            }} /></Link>
+            }} /></Link> */}
           </Button>
         </Container>
       </OuterContainer>
