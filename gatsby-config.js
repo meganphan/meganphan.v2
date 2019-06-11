@@ -53,6 +53,15 @@ module.exports = {
         trackingId: "UA-141793430-1",
       },
     },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `tomato`,
+        // Disable the loading spinner.
+        showSpinner: true,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // 'gatsby-plugin-offline',
