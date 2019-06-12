@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  Megan Phan - GatsbyJS Personal Website
+  Megan Phan's Personal Website
 </h1>
 
 [GatsbyJS](https://www.gatsbyjs.org/) is a free and open source static website builder build on React. It's one implementation of the [JAMstack](https://jamstack.org/) idea which creates high speed webpages.
