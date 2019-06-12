@@ -84,7 +84,7 @@ function SEO({ description, lang, meta, keywords, title }) {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  keywords: ['Hoang Phan, Megan Phan, Megan, Hoang, Phan, meganphan, hoangphan, software engineer, front-end engineer, web developer, javascript, tcu, texas christian university'],
+  keywords: [],
 }
 
 SEO.propTypes = {

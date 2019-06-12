@@ -31,7 +31,7 @@ const Content = styled.div`
 
 const About = () => (
   <Layout>
-    <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="About" />
     <Content>
         {/* eslint-disable */}
         <h1>Annyeonghaseyo!</h1>

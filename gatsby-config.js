@@ -3,7 +3,6 @@ module.exports = {
     title: `Megan Phan`,
     description: `A Vietnamese girl, who is pursuing her B.S. in Computer Science at Texas Christian University. Her core values as a CS major are learning, creating, and contributing.`,
     author: `@meganphan`,
-    keywords: 'Hoang Phan, Megan Phan, Megan, Hoang, Phan, meganphan, hoangphan, software engineer, front-end engineer, web developer, javascript, tcu, texas christian university',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

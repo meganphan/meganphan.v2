@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const Projects = () => (
   <Layout>
-    <SEO title="Projects" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Projects" />
   </Layout>
 )
 
