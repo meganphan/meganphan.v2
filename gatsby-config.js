@@ -3,6 +3,7 @@ module.exports = {
     title: `Megan Phan`,
     description: `A Vietnamese girl, who is pursuing her B.S. in Computer Science at Texas Christian University. Her core values as a CS major are learning, creating, and contributing.`,
     author: `@meganphan`,
+    siteUrl: `https://ourmegan.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -51,15 +52,6 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-141793430-1",
-      },
-    },
-    {
-      resolve: `gatsby-plugin-nprogress`,
-      options: {
-        // Setting a color is optional.
-        color: `tomato`,
-        // Disable the loading spinner.
-        showSpinner: true,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
