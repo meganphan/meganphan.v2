@@ -63,8 +63,6 @@ const About = () => (
         </FlexContainer>
         <ContentContainer>
         <h1>Annyeonghaseyo!</h1>
-        <p>I am Hoang, but call me Megan because "Hoang Phan" sounds like a 18-year-old boy, which I am not. </p>
-        <p>When I am not in front of a computer, I'd play with my cat Michio, cook some delicious Vietnamese dishes, decorate my room, or spend the whole afternoon cleaning my apartment.</p>
         </ContentContainer>
     </Content>
   </Layout>
