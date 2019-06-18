@@ -19,6 +19,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            siteUrl
             keywords
           }
         }
@@ -59,6 +60,10 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `title`,
           content: title,
+        },
+        {
+          name: `og:url`,
+          content: site.siteMetadata.siteUrl,
         },
       ]
         .concat(
