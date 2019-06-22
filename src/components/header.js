@@ -15,6 +15,21 @@ const NavLink = styled(Link)`
   text-decoration: none;
   display: inline-block;
   position: relative;
+  &:nth-child(1){
+    animation: 1s ease-in-out 0s 1 slideDown;  
+  }
+  &:nth-child(2){
+    animation: 1.2s ease-in-out 0s 1 slideDown;  
+  }
+  &:nth-child(3){
+    animation: 1.4s ease-in-out 0s 1 slideDown;  
+  }
+  &:nth-child(4){
+    animation: 1.6s ease-in-out 0s 1 slideDown;  
+  }
+  &:nth-child(5){
+    animation: 1.8s ease-in-out 0s 1 slideDown;  
+  }
 
   ::after {
     content: "";
@@ -44,6 +59,21 @@ const NavLink = styled(Link)`
 
 const HomeLink = styled(NavLink)`
   margin-left: 0;
+  animation: 1s ease-in-out 0s 1 slideDown;  
+
+  @keyframes slideDown{
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 `
 
 const SiteHeader = styled.header`

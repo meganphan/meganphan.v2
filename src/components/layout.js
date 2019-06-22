@@ -31,6 +31,22 @@ const Footer = styled.footer`
   display: flex;
   justify-content: center;
   font-size: 15px;
+  animation: 1s ease-in-out 0s 1 slideUp forwards; 
+  opacity: 0;
+
+  @keyframes slideUp{
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
   & .faHeart{
     padding-left: 0.5em;

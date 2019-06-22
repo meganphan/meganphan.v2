@@ -27,23 +27,54 @@ const Description = styled.p`
   padding: 0;
   margin-bottom: 1rem;
   font-size: 1.4rem;
+  animation: 1.2s ease-in-out 0s 1 slideDown forwards;
+  opacity: 0;
 `
 
 const NameHeader = styled.h1`
   font-size: 3.5rem;
   margin-bottom: 0;
+  animation: 1s ease-in-out 0s 1 slideDown forwards; 
+  opacity: 0;
+
+  @keyframes slideDown{
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  &:hover{
+    &::before{
+      content: '<'
+    }
+    &::after{
+      content: '/>'
+    }
+    color: rgb(23, 151, 151);
+  }
+  
 `
 const Button = styled.button`
   outline: none;
   border: none;
-  animation: right 1s infinite alternate;
+  animation: right 1.6s infinite alternate;
+  opacity: 0;
   
   @keyframes right{
     from{
       transform: translateX(0px);
-      color: rgb(23, 151, 151);
+      opacity: 0;
     }to{
       transform: translateX(-15px);
+      opacity: 1;
     }
   }
   & .faArrow:hover{
@@ -55,9 +86,24 @@ const Button = styled.button`
 const SocialMediaLink = styled.a`
   position: relative;
   margin-right: 1em;
+  animation: 1.4s ease-in-out 0s 1 opacity forwards;  
+  opacity: 0;
+
   &:hover{
     color: rgb(23, 151, 151);
     fill: currentColor;
+  }
+
+  @keyframes opacity{
+    0% {
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 `
 const LandingBio = () => (
