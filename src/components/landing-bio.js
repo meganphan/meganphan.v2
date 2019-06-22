@@ -66,7 +66,7 @@ const Button = styled.button`
   outline: none;
   border: none;
   animation: right 1.6s infinite alternate;
-  opacity: 0;
+  opacity: 1;
   
   @keyframes right{
     from{
@@ -87,7 +87,7 @@ const SocialMediaLink = styled.a`
   position: relative;
   margin-right: 1em;
   animation: 1.4s ease-in-out 0s 1 opacity forwards;  
-  opacity: 0;
+  opacity: 1;
 
   &:hover{
     color: rgb(23, 151, 151);

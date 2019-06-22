@@ -13,6 +13,8 @@ const Container = styled.div`
     & h1{
       font-size: 80px;
     }
+    animation: 1s ease-in-out 0s 1 opacity forwards;  
+    opacity: 1;
 `
 
 const NotFoundPage = () => (

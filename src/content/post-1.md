@@ -1,7 +1,7 @@
 ---
 title: "My First Post"
 date: "2019-06-12"
-draft: true
+draft: false
 path: "/blog/my-first-post"
 ---
 
