@@ -109,7 +109,7 @@ const Avatar = styled.img`
 
 const About = () => (
   <Layout>
-    <SEO title="About" />
+    <SEO title="About" keywords={["about","gatsby", "application", "react", "megan phan", "hoang phan", "frontend", "web developer", "texas christian university", "software engineer", "portfolio"]} />
     <Content>
         {/* eslint-disable */}
         <FlexContainer>

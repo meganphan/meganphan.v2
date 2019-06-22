@@ -187,7 +187,7 @@ const Desc = styled.ul`
 `
 const Experience = () => (
   <Layout>
-    <SEO title="Experience" />
+    <SEO title="Experience" keywords={["gatsby", "application", "react", "megan phan", "hoang phan", "frontend", "web developer", "texas christian university", "software engineer", "portfolio"]} />
     <Wrap>
   <List>
     <Entry>
