@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Megan Phan`,
-    description: `A Vietnamese girl, who is pursuing her B.S. in Computer Science at Texas Christian University. Her core values as a CS major are learning, creating, and contributing.`,
+    description: `Megan Hoang Phan, a Vietnamese girl, who is pursuing her B.S. in Computer Science at Texas Christian University. Her core values as a CS major are learning, creating, and contributing.
+    She enjoys building high quality responsive websites and thrives to become a web developer.`,
     author: `@meganphan`,
     siteUrl: `https://ourmegan.com`,
     keywords: `megan, phan, hoang, tcu, texas, computer, science, website, web, development, software, engineer, frontend, personal`,
