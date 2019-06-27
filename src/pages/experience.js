@@ -192,7 +192,7 @@ const Experience = () => (
   <List>
     <Entry>
       <time>
-        Summer 2017
+        Summer 2016
       </time>
       <Job>
         IT Intern 
