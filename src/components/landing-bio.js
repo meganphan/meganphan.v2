@@ -126,7 +126,7 @@ const LandingBio = () => (
           <SocialMediaLink href="https://www.linkedin.com/in/hoangphan79/" target="_blank"><IconLinkedIn /></SocialMediaLink>
           <SocialMediaLink href="https://github.com/meganphan" target="_blank"><IconGithub /></SocialMediaLink>
           <SocialMediaLink href="https://www.instagram.com/meganhphan/" target="_blank"><IconInsta /></SocialMediaLink>
-          <SocialMediaLink href="mailto:kimhoang7994@gmail.com" target="_blank"><IconEmail /></SocialMediaLink>
+          <SocialMediaLink href="mailto:kimhoang7994@gmail.com"><IconEmail /></SocialMediaLink>
           <br></br>
           <br></br>
           <Button>
