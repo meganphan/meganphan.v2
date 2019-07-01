@@ -9,6 +9,7 @@ import { Link } from "gatsby"
 import IconLinkedIn from "../components/icons/linkedin"
 import IconGithub from "../components/icons/github"
 import IconInsta from "../components/icons/instagram"
+import IconEmail from "../components/icons/email"
 import IconArrow from "../components/icons/arrow"
 
 const Container = styled.div`
@@ -125,6 +126,7 @@ const LandingBio = () => (
           <SocialMediaLink href="https://www.linkedin.com/in/hoangphan79/" target="_blank"><IconLinkedIn /></SocialMediaLink>
           <SocialMediaLink href="https://github.com/meganphan" target="_blank"><IconGithub /></SocialMediaLink>
           <SocialMediaLink href="https://www.instagram.com/meganhphan/" target="_blank"><IconInsta /></SocialMediaLink>
+          <SocialMediaLink href="mailto:kimhoang7994@gmail.com" target="_blank"><IconEmail /></SocialMediaLink>
           <br></br>
           <br></br>
           <Button>
