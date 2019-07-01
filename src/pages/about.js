@@ -121,8 +121,9 @@ const About = () => (
         <p>Summer 2017, I started my first personal project, which was the first version of my personal website.
           I looked everywhere on the Internet to find web development courses/tutorials, and taught myself all the basic of building a static website.
           From simple html pages to more fancy, attractive CSS features, and then some animations and effects. I learned everything step-by-step and thoroughly.
-          Since then, I have enjoyed building high quality responsive websites for me and others.
+          Since then, I have enjoyed building high quality responsive websites.
         </p>
+        <p>When I am not in front of a computer screen, I am probably playing with my cat Michio, cooking some delicious Vietnamese dishes, or cleaning my apartment. </p>
         <h3>Learn.Create.Contribute</h3>
         </ContentContainer>
     </Content>
