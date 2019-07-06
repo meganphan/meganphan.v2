@@ -1,8 +1,9 @@
 ---
-title: "My First Post"
-date: "2019-06-12"
+title: "25 things I learned before 25"
+date: "2019-07-06"
 draft: false
-path: "/blog/my-first-post"
+path: "/20190706/25-before-25"
 ---
 
-This is my first ever React website. I always wanted to learn more about React and generally, about web development. This site is still "under construction", so it's pretty blank. Thanks for stopping by and see you when this is fully decorated.
+![](images/my-fabulous-25.png)
+first post

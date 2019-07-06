@@ -6,14 +6,14 @@ module.exports = {
     author: `@meganphan`,
     siteUrl: `https://ourmegan.com`,
     keywords: `megan, phan, hoang, tcu, texas, computer, science, website, web, development, software, engineer, frontend, personal`,
-  },
+  },    
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
-        path: `${__dirname}/src/content`,
+        path: `${__dirname}/src/content/`,
       },
     },
     {
@@ -25,6 +25,19 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 970,
+            },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-transformer-remark`,
