@@ -5,4 +5,7 @@ draft: false
 path: "/blog/first-post"
 ---
 
-nothing to see here =)
+
+Hello there
+
+![](./my-fabulous-25.png)
