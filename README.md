@@ -1,6 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
+  <a href="https://ourmegan.com">
     <img alt="megan" src="src/images/logo-main.png" width="100" />
   </a>
 </p>
