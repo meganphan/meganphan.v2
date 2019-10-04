@@ -54,10 +54,10 @@ const NameHeader = styled.h1`
 
   &:hover{
     &::before{
-      content: '<'
+      content: '<h1>'
     }
     &::after{
-      content: '/>'
+      content: '</h1>'
     }
     color: rgb(23, 151, 151);
   }
