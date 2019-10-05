@@ -2,9 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
-// import { faLinkedin, faInstagram, faGithub} from '@fortawesome/free-brands-svg-icons'
 import { Link } from "gatsby"
 import IconLinkedIn from "../components/icons/linkedin"
 import IconGithub from "../components/icons/github"
