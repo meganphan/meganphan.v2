@@ -218,8 +218,7 @@ const Experience = () => (
             </li>
             <li>
               Working with variety of different languages, frameworks and
-              content management systems such as Python Flask, MongoDB, React,
-              etc.
+              content management systems such as Python Flask, MongoDB, etc.
             </li>
             <li>
               Working closely with another developer and professor to implement
