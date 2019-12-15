@@ -3,7 +3,6 @@ import styled from "@emotion/styled"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import avatar from "../images/avatar.jpg"
-import {Link} from 'gatsby'
 
 const Content = styled.div`
   margin: 0 auto;
@@ -119,14 +118,14 @@ const About = () => (
         <ContentContainer>
         <h1>Hello World!</h1>
         <p>I am Hoang but you can call me Megan. I am currently a fourth-year Computer Science student at Texas Christian University, Texas.
-          Right now, I am working on a full stack web research project called <Link to="https://www.eurekalabs.net/">Eureka Labs</Link>, which is an educational platform for learning security.
+          Right now, I am working on a full stack web research project called <a href="https://www.eurekalabs.net/">Eureka Labs</a>, which is an educational platform for learning security.
         </p>
         <p>Summer 2017, I started my first personal project, which was the first version of my personal website.
           I looked everywhere on the Internet to find web development courses/tutorials, and taught myself all the basic of building a static website.
           From simple html pages to more fancy, attractive CSS features, and then some animations and effects. I learned everything step-by-step and thoroughly.
           Since then, I have enjoyed building high quality responsive websites.
         </p>
-        <p>I am currently learning about <Link to="https://reactjs.org">React</Link>, <Link to="https://facebook.github.io/react-native/">React Native</Link> and make some cool projects using them.</p>
+        <p>I am currently learning about <a href="https://reactjs.org">React</a>, <a href="https://facebook.github.io/react-native/">React Native</a> and make some cool projects using them.</p>
         <p>When I am not in front of a computer screen, I am probably playing with my cat Michio, cooking some delicious Vietnamese dishes, or cleaning my apartment. </p>
         <h3>Learn.Create.Contribute</h3>
         </ContentContainer>
