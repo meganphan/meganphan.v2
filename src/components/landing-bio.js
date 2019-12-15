@@ -48,16 +48,6 @@ const NameHeader = styled.h1`
       opacity: 1;
     }
   }
-
-  &:hover{
-    &::before{
-      content: '☆'
-    }
-    &::after{
-      content: '☆'
-    }
-    color: rgb(23, 151, 151);
-  }
   
 `
 const Button = styled.button`

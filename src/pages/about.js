@@ -117,6 +117,7 @@ const About = () => (
         </FlexContainer>
         <ContentContainer>
         <h1>Hello World!</h1>
+        <h4 style={{color: 'green', textAlign:'center'}}>I am actively looking for a full-time position in Software Engineering (graduate in May 2020)</h4>
         <p>I am Hoang but you can call me Megan. I am currently a fourth-year Computer Science student at Texas Christian University, Texas.
           Right now, I am working on a full stack web research project called <a href="https://www.eurekalabs.net/">Eureka Labs</a>, which is an educational platform for learning security.
         </p>
