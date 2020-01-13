@@ -213,16 +213,13 @@ const Experience = () => (
           </Job>
           <Desc>
             <li>
-              Designing and developing an education platform for learning
-              security by creating eureka experiences.
+            Design and develop an education platform for learning security, which provides essential lab tutorials and materials
             </li>
             <li>
-              Working with variety of different languages, frameworks and
-              content management systems such as Python Flask, MongoDB, etc.
+            Enhance 75% the UI/UX by creating more high quality visual features
             </li>
             <li>
-              Working closely with another developer and professor to implement
-              a full stack project.
+            Implement new responsive and mobile-friendly approach which improves cross-browser compatibility and performance consistency
             </li>
           </Desc>
         </Entry>
@@ -233,12 +230,8 @@ const Experience = () => (
             <em> @ DesignPlex Biomedical LLC</em>
           </Job>
           <Desc>
-            <li>Redesigning and improving the content of the web pages.</li>
-            <li>Working with PHP, WordPress, HTML, CSS, and JavaScript.</li>
-            <li>
-              Assisting in marketing and promotional activities (e.g. social
-              media, SEO)
-            </li>
+            <li>Implemented custom JavaScript, CSS, and PHP codes; increased the user interface by 30%</li>
+            <li>Worked directly with the Managing Director to improve the marketing plan and website content</li>
           </Desc>
         </Entry>
         <Entry>
@@ -249,34 +242,11 @@ const Experience = () => (
           </Job>
           <Desc>
             <li>
-              Provided supports for students to help solve their Java school
-              projects.
+            Worked closely with multiple computer science students to tutor in Intro to Programming (Java)
             </li>
             <li>
-              Assisted in maintaining computer lab operations and activities.
+            Provided tutoring environment to promote productivity and learning
             </li>
-            <li>
-              Troubleshot malfunctions of hardware and software applications.
-            </li>
-          </Desc>
-        </Entry>
-
-        <Entry>
-          <time>Summer 2016</time>
-          <Job>
-            IT Intern
-            <em> @ Alabama Public Television</em>
-          </Job>
-          <Desc>
-            <li>
-              Assisted in maintaining hardware and software applications in
-              employees' computers.
-            </li>
-            <li>
-              Worked closely with other interns and IT director to set up a new
-              computer system for Education department.
-            </li>
-            <li>Assisted in troubleshooting technical issues.</li>
           </Desc>
         </Entry>
       </List>
