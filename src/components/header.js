@@ -51,8 +51,6 @@ class Header extends Component {
                 <Logo src={NewLogo}></Logo>
                 <Menu>
                     <ItemNav className={this.state.active ? "item_nav" : null} onClick={this.activeClick} to='#about'>about me</ItemNav>
-                    <ItemNav className={this.state.active ? "item_nav" : null} onClick={this.activeClick} to='#projects'>projects</ItemNav>
-                    <ItemNav className={this.state.active ? "item_nav" : null} onClick={this.activeClick} to='#contact'>contact me</ItemNav>
                 </Menu>
             </Head>
         )
