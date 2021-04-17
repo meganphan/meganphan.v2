@@ -9,18 +9,14 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "@emotion/styled"
-
-import Header from "./header"
-import "./layout.css"
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import "./styles/layout.css"
 import IconHeart from "../components/icons/heart"
 
 const Content = styled.div`
   margin: 0 auto;
-  max-width: 860px;
   padding: 0 1.0875rem 1rem;
   padding-top: 0;
+  background-color: #001717;
 `
 
 const GithubLink = styled.a`
@@ -56,6 +52,11 @@ const Footer = styled.footer`
   }
 `
 
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]')
+}
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -70,7 +71,6 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         {/* eslint-disable */}
-        <Header siteTitle={data.site.siteMetadata.title} />
         <Content>
           <main>{children}</main>
           <Footer>

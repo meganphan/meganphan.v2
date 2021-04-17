@@ -1,107 +1,62 @@
-import { Link } from "gatsby"
+import React, {Component} from "react"
 import styled from "@emotion/styled"
-import PropTypes from "prop-types"
-import React from "react"
+import NewLogo from "../images/logo_new.png"
+import {Link} from "gatsby"
 
-const Content = styled.div`
-  max-width: 860px;
-  padding: 1rem 1.0875rem;
-  font-size: 1.2rem;
+const Head = styled.div`
+    top: 0px;
+    overflow: hidden;
+    padding: 25px 25px;
+`   
+
+const Logo = styled.img`
+    width: 5em;
+    height: 2.5em;
 `
 
-const NavLink = styled(Link)`
-  color: black;
-  margin-left: 15px;
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-  &:nth-child(1){
-    animation: 1s ease-in-out 0s 1 slideDown;  
-  }
-  &:nth-child(2){
-    animation: 1.2s ease-in-out 0s 1 slideDown;  
-  }
-  &:nth-child(3){
-    animation: 1.4s ease-in-out 0s 1 slideDown;  
-  }
-  &:nth-child(4){
-    animation: 1.6s ease-in-out 0s 1 slideDown;  
-  }
-  &:nth-child(5){
-    animation: 1.8s ease-in-out 0s 1 slideDown;  
-  }
-
-  ::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(23, 151, 151);
-    transform-origin: bottom right;
-    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
-  }
-
-  :hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-
-  @media screen and (max-width: 575px){
-    font-size: 15px;
-  }
-  @media screen and (max-width: 450px){
-    font-size: 12px;
-  }
+const Menu = styled.div`
+    float: right;
 `
 
-const HomeLink = styled(NavLink)`
-  margin-left: 0;
-  animation: 1s ease-in-out 0s 1 slideDown;  
+const ItemNav = styled(Link)`
+    color: #008080;
+    padding-left: 2.5em;
+    font-size: 1em;
+    font-family: 'Adobe Gothic Std', san-serif;
+    text-decoration: none;
 
-  @keyframes slideDown{
-    0% {
-      transform: translateY(-100%);
-      opacity: 0;
+    &:hover {
+        cursor: pointer;
+        color: #B2D8D8;
     }
-    50%{
-      opacity: 0.5;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
 `
 
-const SiteHeader = styled.header`
-  background: transparent;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-`
+class Header extends Component {
+    constructor(props) {
+        super(props);
+        this.activeClick = this.activeClick.bind(this);
+        this.state = {
+            active: false,
+        }
+    }
 
-const Header = ({ siteTitle }) => (
-  <SiteHeader>
-    <Content>
-      <p>
-        <HomeLink to="/">Home</HomeLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/experience">Experience</NavLink>
-        {/* <NavLink to="/projects">Projects</NavLink> */}
-      </p>
-    </Content>
-  </SiteHeader>
-)
+    activeClick() {
+        const currentState = this.state.active;
+        this.setState({ active : !currentState});
+    }
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+    render() {
+        return (
+            <Head>
+                <Logo src={NewLogo}></Logo>
+                <Menu>
+                    <ItemNav className={this.state.active ? "item_nav" : null} onClick={this.activeClick} to='#about'>about me</ItemNav>
+                    <ItemNav className={this.state.active ? "item_nav" : null} onClick={this.activeClick} to='#projects'>projects</ItemNav>
+                    <ItemNav className={this.state.active ? "item_nav" : null} onClick={this.activeClick} to='#contact'>contact me</ItemNav>
+                </Menu>
+            </Head>
+        )
+    }
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+export default Header;
